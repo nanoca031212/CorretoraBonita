@@ -207,7 +207,7 @@ export default function Home() {
           <div className="relative z-20 mx-auto w-full max-w-[560px] min-[801px]:mx-0 min-[801px]:w-[560px]">
             <div className="relative isolate flow-root">
               <div aria-hidden="true" className="pointer-events-none absolute -inset-x-8 -top-10 -bottom-6 -z-10 bg-white/60 backdrop-blur-[14px] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_72%)] min-[801px]:-inset-x-14" />
-            <h1 id="hero-title" className="font-serif text-[clamp(34px,6.5vw,46px)] leading-[1.28] font-normal tracking-[-1px] text-[#171c19] min-[801px]:text-[48px] min-[801px]:leading-[1.35] min-[801px]:tracking-[-1.5px]"><span className={lineClass}>Tenha <em className="font-bold text-[#22bdbb]">Seu Patrimônio</em> em</span>{" "}<span className={lineClass}>Hotel de Luxo em SP</span></h1>
+            <h1 id="hero-title" className="font-serif text-[clamp(34px,6.5vw,46px)] leading-[1.28] font-normal tracking-[-1px] text-[#171c19] min-[801px]:text-[48px] min-[801px]:leading-[1.35] min-[801px]:tracking-[-1.5px]"><span className={lineClass}>Tenha <em className="font-bold text-[#22bdbb]">Seu Patrimônio</em> em</span>{" "}<span className={lineClass}>Hotel de Luxo em MG</span></h1>
             <p className="relative isolate mt-4 mb-5 max-w-[460px] before:pointer-events-none before:absolute before:-inset-x-8 before:-inset-y-7 before:-z-10 before:bg-white/65 before:backdrop-blur-[14px] before:[mask-image:radial-gradient(ellipse,black_45%,transparent_75%)] before:content-[''] text-base leading-[1.23] tracking-[.05px] text-[#39413c] min-[801px]:mt-2 min-[801px]:mb-[15px] min-[801px]:max-w-[490px] min-[801px]:text-[17px] min-[801px]:tracking-[-.25px]"><span className={lineClass}>Com a PRIME REALTY você encontra <strong>novas formas de investir</strong></span>{" "}<span className={lineClass}><strong>em hotelaria</strong> com suporte para escolher,</span>{" "}<span className={lineClass}>planejar, acompanhar e diversificar.</span></p>
             </div>
             <form id="contato" className="w-full max-w-[360px] scroll-mt-6 rounded-[7px] border border-white/65 bg-[#f2f5f2]/16 p-5 shadow-[0_2px_3px_#243a3529] backdrop-blur-[12px] min-[801px]:px-[22px] min-[801px]:pt-[18px] min-[801px]:pb-[22px]" onSubmit={(event) => { event.preventDefault(); setSubmitted(true); }}>
@@ -257,7 +257,7 @@ export default function Home() {
               <p className="text-[25px] leading-tight sm:text-[29px]">Investimentos a partir de</p>
               <p className="mt-1 flex flex-wrap items-baseline gap-x-2 leading-[1.15]">
                 <span className="text-[30px] font-bold italic sm:text-[38px]">R$</span>
-                <strong className="text-[50px] font-bold tracking-[-2px] italic sm:text-[60px]">370mil</strong>
+                <strong className="text-[50px] font-bold tracking-[-2px] italic sm:text-[60px]">270mil</strong>
                 <span className="text-[25px] sm:text-[29px]">à vista</span>
               </p>
               <p className="mt-2 text-[18px] leading-snug sm:text-[22px]">Entrada de R$ 140mil e restante com parcelamento</p>
@@ -267,7 +267,7 @@ export default function Home() {
               <p className="text-[23px] leading-snug sm:text-[29px]">Estimativa de rendimento mensal de</p>
               <p className="mt-3 flex flex-wrap items-baseline justify-center gap-x-2 leading-[1.1]">
                 <span className="text-[30px] font-bold text-[#22bdbb] italic sm:text-[40px]">R$</span>
-                <strong className="text-[48px] font-bold tracking-[-2px] text-[#22bdbb] italic sm:text-[68px]">5.657,00</strong>
+                <strong className="text-[48px] font-bold tracking-[-2px] text-[#22bdbb] italic sm:text-[68px]">4.570,00</strong>
                 <span className="text-[23px] sm:text-[27px]">A.M.</span>
               </p>
               <p className="mt-4 text-[25px] leading-tight sm:text-[29px]">Consulte as condições</p>
