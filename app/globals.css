@@ -22,3 +22,12 @@
     50% { transform: translateY(-9px); }
   }
 }
+
+@theme {
+  --animate-decoration-float-desktop: decoration-float-desktop 5s ease-in-out infinite;
+
+  @keyframes decoration-float-desktop {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-24px); }
+  }
+}

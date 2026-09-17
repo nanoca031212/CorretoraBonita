@@ -19,11 +19,11 @@ const investmentDetails = [
   { title: "Endereço Estratégico", description: "Uma região conectada aos principais polos de serviços, negócios e mobilidade." },
 ];
 const galleryImages = [
-  { src: "/bloco/1.jfif", alt: "Terraço com sofás, jardim e vista para a cidade ao pôr do sol" },
-  { src: "/bloco/2.jfif", alt: "Ambiente integrado com sala de estar, lareira e vista para a piscina" },
-  { src: "/bloco/3.jfif", alt: "Banheiro com bancada dupla e portas de vidro voltadas para a piscina" },
-  { src: "/bloco/4.jfif", alt: "Área interna com ilha central, armários de madeira e poltronas" },
-  { src: "/bloco/5.jfif", alt: "Sala de estar com sofá amplo e vista para o pátio com piscina" },
+  { src: "/bloco/1.webp", alt: "Terraço com sofás, jardim e vista para a cidade ao pôr do sol" },
+  { src: "/bloco/2.webp", alt: "Ambiente integrado com sala de estar, lareira e vista para a piscina" },
+  { src: "/bloco/3.webp", alt: "Banheiro com bancada dupla e portas de vidro voltadas para a piscina" },
+  { src: "/bloco/4.webp", alt: "Área interna com ilha central, armários de madeira e poltronas" },
+  { src: "/bloco/5.webp", alt: "Sala de estar com sofá amplo e vista para o pátio com piscina" },
 ];
 const lineClass = "whitespace-normal min-[801px]:block min-[801px]:whitespace-nowrap";
 const inputClass = "h-[42px] min-w-0 w-full rounded border border-white/15 bg-[#eff0ef]/70 px-2.5 text-sm text-[#26342f] placeholder:text-[#525953] placeholder:opacity-100 min-[801px]:h-[31px] min-[801px]:text-xs";
@@ -130,7 +130,7 @@ function InvestmentDecoration({ side, src, inTitleGap = false }: { side: "left" 
   return (
     <div aria-hidden="true" className={`pointer-events-none absolute w-[80px] select-none ${side === "right" ? "z-30" : "z-0"} sm:w-[130px] xl:w-[190px] 2xl:w-[240px] ${inTitleGap ? "-left-4 top-0" : side === "left" ? "hidden left-1 sm:top-[14%] sm:block" : "right-0 bottom-0 translate-y-4 sm:right-1 sm:bottom-[3%] sm:translate-y-0"}`}>
       <div ref={imageRef}>
-        <Image src={src} alt="" width={1080} height={1350} sizes="(min-width: 1536px) 240px, (min-width: 1280px) 190px, (min-width: 640px) 130px, 80px" draggable={false} className={`h-auto w-full animate-decoration-float motion-reduce:animate-none ${side === "right" ? "[animation-delay:-2.5s]" : ""}`} />
+        <Image src={src} alt="" width={1080} height={1350} sizes="(min-width: 1536px) 240px, (min-width: 1280px) 190px, (min-width: 640px) 130px, 80px" draggable={false} className={`h-auto w-full animate-decoration-float sm:animate-decoration-float-desktop motion-reduce:animate-none ${side === "right" ? "[animation-delay:-2.5s]" : ""}`} />
       </div>
     </div>
   );
@@ -180,14 +180,14 @@ export default function Home() {
     <main id="inicio" className="[&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-offset-4 [&_a:focus-visible]:outline-[#078b8b] [&_button]:cursor-pointer [&_button:focus-visible]:outline-2 [&_button:focus-visible]:outline-offset-4 [&_button:focus-visible]:outline-[#078b8b] [&_input:focus-visible]:outline-2 [&_input:focus-visible]:outline-offset-4 [&_input:focus-visible]:outline-[#078b8b]">
       <section className="relative min-h-[728px] overflow-hidden min-[1500px]:min-h-[calc(100svh-34px)]" aria-labelledby="hero-title">
         {/* Fotografia de fundo do hero. */}
-        <Image src="/back.jfif" alt="" fill sizes="100vw" preload className="object-cover object-center" />
+        <Image src="/back.webp" alt="" fill sizes="100vw" preload className="object-cover object-center" />
         <header className="relative z-30 mx-auto mt-3.5 flex h-[66px] w-[calc(100%-32px)] max-w-[1064px] items-center gap-[15px] rounded-[7px] border border-white/45 bg-[#f5f7f3]/40 px-4 py-2.5 shadow-[0_2px_3px_#243a352b] backdrop-blur-[16px] min-[801px]:h-[70px] min-[801px]:w-[calc(100%-64px)] min-[801px]:px-5 min-[1101px]:gap-[30px] min-[1101px]:pl-[30px]">
-          <a className="flex shrink-0 items-center gap-[5px] font-serif leading-[.88]" href="#inicio" aria-label="Invest Suites — início">
+          <a className="flex shrink-0 items-center gap-[5px] font-serif leading-[.88]" href="#inicio" aria-label="PRIME REALTY — início">
             <svg className="h-10 w-[35px] text-[#219c9c] min-[801px]:h-[46px] min-[801px]:w-[42px]" viewBox="0 0 44 48" fill="none" aria-hidden="true">
               <path d="M5 43V23l11-6v26M16 36V9l11-6v30M27 29V14l11 5v24H5" stroke="currentColor" strokeWidth="3" />
               <path d="M2 40c9-13 22-19 40-20" stroke="currentColor" strokeWidth="3" />
             </svg>
-            <span className="grid text-[19px] min-[801px]:text-[22px]"><strong className="text-[#219c9c]">INVEST</strong><span className="tracking-[1px] text-[#58605a]">SUITES</span></span>
+            <span className="grid text-[19px] min-[801px]:text-[22px]"><strong className="text-[#219c9c]">PRIME</strong><span className="tracking-[1px] text-[#58605a]">REALTY</span></span>
           </a>
 
           <nav id="navigation" className={`${menuOpen ? "grid" : "hidden"} absolute inset-x-0 top-[74px] rounded-[7px] border border-white/60 bg-[#e8eee9] p-3 shadow-[0_8px_20px_#243a351a] min-[801px]:static min-[801px]:ml-auto min-[801px]:flex min-[801px]:items-center min-[801px]:rounded-none min-[801px]:border-0 min-[801px]:bg-transparent min-[801px]:p-0 min-[801px]:shadow-none`} aria-label="Navegação principal">
@@ -208,7 +208,7 @@ export default function Home() {
             <div className="relative isolate flow-root">
               <div aria-hidden="true" className="pointer-events-none absolute -inset-x-8 -top-10 -bottom-6 -z-10 bg-white/60 backdrop-blur-[14px] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_72%)] min-[801px]:-inset-x-14" />
             <h1 id="hero-title" className="font-serif text-[clamp(34px,6.5vw,46px)] leading-[1.28] font-normal tracking-[-1px] text-[#171c19] min-[801px]:text-[48px] min-[801px]:leading-[1.35] min-[801px]:tracking-[-1.5px]"><span className={lineClass}>Tenha <em className="font-bold text-[#22bdbb]">Seu Patrimônio</em> em</span>{" "}<span className={lineClass}>Hotel de Luxo em SP</span></h1>
-            <p className="relative isolate mt-4 mb-5 max-w-[460px] before:pointer-events-none before:absolute before:-inset-x-8 before:-inset-y-7 before:-z-10 before:bg-white/65 before:backdrop-blur-[14px] before:[mask-image:radial-gradient(ellipse,black_45%,transparent_75%)] before:content-[''] text-base leading-[1.23] tracking-[.05px] text-[#39413c] min-[801px]:mt-2 min-[801px]:mb-[15px] min-[801px]:max-w-[490px] min-[801px]:text-[17px] min-[801px]:tracking-[-.25px]"><span className={lineClass}>Com a Aurora você encontra <strong>novas formas de investir</strong></span>{" "}<span className={lineClass}><strong>em hotelaria</strong> com suporte para escolher,</span>{" "}<span className={lineClass}>planejar, acompanhar e diversificar.</span></p>
+            <p className="relative isolate mt-4 mb-5 max-w-[460px] before:pointer-events-none before:absolute before:-inset-x-8 before:-inset-y-7 before:-z-10 before:bg-white/65 before:backdrop-blur-[14px] before:[mask-image:radial-gradient(ellipse,black_45%,transparent_75%)] before:content-[''] text-base leading-[1.23] tracking-[.05px] text-[#39413c] min-[801px]:mt-2 min-[801px]:mb-[15px] min-[801px]:max-w-[490px] min-[801px]:text-[17px] min-[801px]:tracking-[-.25px]"><span className={lineClass}>Com a PRIME REALTY você encontra <strong>novas formas de investir</strong></span>{" "}<span className={lineClass}><strong>em hotelaria</strong> com suporte para escolher,</span>{" "}<span className={lineClass}>planejar, acompanhar e diversificar.</span></p>
             </div>
             <form id="contato" className="w-full max-w-[360px] scroll-mt-6 rounded-[7px] border border-white/65 bg-[#f2f5f2]/16 p-5 shadow-[0_2px_3px_#243a3529] backdrop-blur-[12px] min-[801px]:px-[22px] min-[801px]:pt-[18px] min-[801px]:pb-[22px]" onSubmit={(event) => { event.preventDefault(); setSubmitted(true); }}>
               <h2 className="text-center font-serif text-[24px] leading-[1.3] font-bold italic min-[801px]:text-[26px]">Converse com Julia</h2>
@@ -226,7 +226,7 @@ export default function Home() {
             </form>
           </div>
           <div className="pointer-events-none relative mx-auto mt-[30px] h-[420px] w-full max-w-[560px] min-[801px]:absolute min-[801px]:right-0 min-[801px]:bottom-0 min-[801px]:m-0 min-[801px]:h-[640px] min-[801px]:w-[43%] min-[1101px]:right-10 min-[1101px]:w-[48%] min-[1500px]:h-full min-[1500px]:min-h-[640px]">
-            <Image src="/mulher.png" alt="Mulher em destaque na apresentação do Invest Suites" fill sizes="(max-width: 800px) 100vw, 520px" preload className="object-contain object-bottom" />
+            <Image src="/mulher.png" alt="Mulher em destaque na apresentação do PRIME REALTY" fill sizes="(max-width: 800px) 100vw, 520px" preload className="object-contain object-bottom" />
           </div>
         </div>
       </section>
@@ -246,7 +246,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-[1064px]">
           <h2 id="investment-title" className="mx-auto max-w-[900px] text-center font-serif text-[30px] leading-[1.3] tracking-[-.6px] sm:text-[40px] lg:text-[48px]">
             Conheça um novo caminho para <em className="font-bold text-[#22bdbb]">seu patrimônio</em>{" "}
-            <span className="min-[801px]:block">com a Aurora</span>
+            <span className="min-[801px]:block">com a PRIME REALTY</span>
           </h2>
 
           <div className="relative h-[100px] sm:hidden">
@@ -315,7 +315,7 @@ export default function Home() {
                   <span className="text-[27px] sm:text-[31px]">by Hilton</span>
                 </h2>
               </div>
-              <p className="mt-4 text-sm leading-[1.8]">Conheça o Motto by Hilton em São Paulo, uma proposta de hospedagem urbana em Moema, próxima ao Parque do Ibirapuera e ao Aeroporto de Congonhas. Seus ambientes combinam conforto, soluções contemporâneas e <strong>espaços para aproveitar a cidade</strong> com praticidade. A Aurora apresenta os detalhes do empreendimento para você avaliar essa oportunidade com clareza. Uma alternativa para quem procura hotelaria com <strong>boa estrutura, endereço estratégico e uma operação voltada à experiência dos hóspedes.</strong></p>
+              <p className="mt-4 text-sm leading-[1.8]">Conheça o Motto by Hilton em São Paulo, uma proposta de hospedagem urbana em Moema, próxima ao Parque do Ibirapuera e ao Aeroporto de Congonhas. Seus ambientes combinam conforto, soluções contemporâneas e <strong>espaços para aproveitar a cidade</strong> com praticidade. A PRIME REALTY apresenta os detalhes do empreendimento para você avaliar essa oportunidade com clareza. Uma alternativa para quem procura hotelaria com <strong>boa estrutura, endereço estratégico e uma operação voltada à experiência dos hóspedes.</strong></p>
               <a href="#contato" className="group/cta mt-5 flex min-h-12 w-full max-w-[340px] items-center justify-center gap-3 rounded-lg border border-[#169a9c]/35 bg-[linear-gradient(100deg,#219fa3,#16cdd5)] px-5 py-3 text-sm font-medium text-[#133c3b] uppercase shadow-[0_2px_2px_#243a353b] hover:brightness-110">Quero conhecer <ContactArrow /></a>
             </div>
           </div>
@@ -404,10 +404,10 @@ export default function Home() {
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-[#031e19] min-[801px]:bg-transparent min-[801px]:bg-[linear-gradient(90deg,rgba(1,20,16,0.94)_0%,rgba(1,20,16,0.8)_32%,rgba(1,20,16,0.15)_58%,transparent_75%)]" />
         <div className="mx-auto max-w-[1064px]">
           <div className="max-w-[450px] min-[801px]:w-[44%] min-[801px]:py-6">
-            <p className="text-[11px] tracking-[6px] text-[#acbab0] uppercase">Aurora Investimentos</p>
+            <p className="text-[11px] tracking-[6px] text-[#acbab0] uppercase">PRIME REALTY</p>
             <h2 id="broker-title" className="mt-1 font-serif text-[40px] leading-[1.15] font-bold text-[#eef1ed] italic sm:text-[50px]">Julia Cristina</h2>
             <div className="mt-4 space-y-5 text-[13px] leading-[1.8] sm:text-sm [&_strong]:font-bold [&_strong]:text-[#22bdbb]">
-              <p>Na Aurora Investimentos, Julia Cristina aproxima você de <strong>novas oportunidades</strong> em hotelaria. Seu trabalho conecta objetivos pessoais a opções de suítes em São Paulo, com atenção aos detalhes de cada empreendimento. A proposta é apresentar informações de forma clara e acompanhar sua análise com <strong>escuta próxima, orientação personalizada e foco no seu planejamento patrimonial.</strong></p>
+              <p>Na PRIME REALTY, Julia Cristina aproxima você de <strong>novas oportunidades</strong> em hotelaria. Seu trabalho conecta objetivos pessoais a opções de suítes em São Paulo, com atenção aos detalhes de cada empreendimento. A proposta é apresentar informações de forma clara e acompanhar sua análise com <strong>escuta próxima, orientação personalizada e foco no seu planejamento patrimonial.</strong></p>
               <p>Cada atendimento começa entendendo seu momento, suas prioridades e o que você espera de um investimento. Com <strong>proximidade, transparência e atenção em cada etapa</strong>, Julia apresenta características, condições e possibilidades de cada projeto. Assim, você pode comparar alternativas com tranquilidade e construir uma decisão alinhada ao seu perfil e aos seus planos.</p>
             </div>
             <a href="#contato" className="group/cta mt-5 flex min-h-11 w-full max-w-[310px] items-center justify-center gap-2 rounded-md border border-[#169a9c]/35 bg-[linear-gradient(100deg,#219fa3,#16cdd5)] px-6 py-3 text-xs font-medium text-[#133c3b] uppercase hover:brightness-110">Quero conhecer <ContactArrow /></a>
@@ -432,9 +432,9 @@ export default function Home() {
             +55 31 8235-4127
           </a>
         </div>
-        <a href="#inicio" aria-label="Invest Suites — voltar ao início" className="order-first mb-7 flex items-center gap-2 font-serif leading-[.88] min-[901px]:order-none min-[901px]:mb-0">
+        <a href="#inicio" aria-label="PRIME REALTY — voltar ao início" className="order-first mb-7 flex items-center gap-2 font-serif leading-[.88] min-[901px]:order-none min-[901px]:mb-0">
           <svg className="h-[66px] w-[60px] text-[#219c9c]" viewBox="0 0 44 48" fill="none" aria-hidden="true"><path d="M5 43V23l11-6v26M16 36V9l11-6v30M27 29V14l11 5v24H5" stroke="currentColor" strokeWidth="3" /><path d="M2 40c9-13 22-19 40-20" stroke="currentColor" strokeWidth="3" /></svg>
-          <span className="grid text-[30px]"><strong className="text-[#219c9c]">INVEST</strong><span className="tracking-[1px] text-[#99aaa0]">SUITES</span></span>
+          <span className="grid text-[30px]"><strong className="text-[#219c9c]">PRIME</strong><span className="tracking-[1px] text-[#99aaa0]">REALTY</span></span>
         </a>
         <div className="mt-1 grid w-full min-w-0 max-w-[310px] gap-1 text-[13px] sm:text-base min-[901px]:mt-0 min-[901px]:w-auto min-[901px]:max-w-none min-[901px]:gap-3 min-[901px]:justify-self-end">
           <a href="https://www.instagram.com/tzolkinsites/" target="_blank" rel="noopener noreferrer" className="flex min-h-11 min-w-0 items-center gap-3 min-[901px]:min-h-0">
@@ -452,6 +452,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 

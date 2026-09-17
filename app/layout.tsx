@@ -14,9 +14,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Aurora Investimentos | Hotelaria com Julia Cristina",
+  title: "PRIME REALTY | Hotelaria com Julia Cristina",
   description:
-    "Conheça oportunidades em hotelaria com a Aurora Investimentos. Julia Cristina apresenta projetos, condições e detalhes para planejar seu próximo investimento.",
+    "Conheça oportunidades em hotelaria com a PRIME REALTY. Julia Cristina apresenta projetos, condições e detalhes para planejar seu próximo investimento.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -29,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+
 
 
 
