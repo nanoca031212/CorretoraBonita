@@ -206,9 +206,9 @@ export default function Home() {
         <div className="relative mx-auto mt-12 w-[calc(100%-40px)] max-w-[1064px] min-[801px]:mt-[78px] min-[801px]:min-h-[566px] min-[801px]:w-[calc(100%-64px)] min-[1500px]:mt-[100px] min-[1500px]:min-h-[calc(100svh-218px)]">
           <div className="relative z-20 mx-auto w-full max-w-[560px] min-[801px]:mx-0 min-[801px]:w-[560px]">
             <div className="relative isolate flow-root">
-              <div aria-hidden="true" className="pointer-events-none absolute -inset-x-8 -top-10 -bottom-6 -z-10 bg-white/70 backdrop-blur-[28px] [mask-image:radial-gradient(ellipse_at_center,black_45%,transparent_80%)] min-[801px]:-inset-x-14" />
-            <h1 id="hero-title" className="font-serif text-[clamp(34px,6.5vw,46px)] leading-[1.28] font-normal tracking-[-1px] text-[#171c19] min-[801px]:text-[48px] min-[801px]:leading-[1.35] min-[801px]:tracking-[-1.5px]"><span className={lineClass}>Tenha <em className="font-bold text-[#22bdbb]">Seu Patrimônio</em> em</span>{" "}<span className={lineClass}>Hotel de Luxo em MG</span></h1>
-            <p className="relative isolate mt-4 mb-5 max-w-[460px] before:pointer-events-none before:absolute before:-inset-x-8 before:-inset-y-7 before:-z-10 before:bg-white/75 before:backdrop-blur-[28px] before:[mask-image:radial-gradient(ellipse,black_55%,transparent_85%)] before:content-[''] text-base leading-[1.23] tracking-[.05px] text-[#39413c] min-[801px]:mt-2 min-[801px]:mb-[15px] min-[801px]:max-w-[490px] min-[801px]:text-[17px] min-[801px]:tracking-[-.25px]"><span className={lineClass}>Com a PRIME REALTY você encontra <strong>novas formas de investir</strong></span>{" "}<span className={lineClass}><strong>em hotelaria</strong> com suporte para escolher,</span>{" "}<span className={lineClass}>planejar, acompanhar e diversificar.</span></p>
+              <div aria-hidden="true" className="pointer-events-none absolute -inset-x-8 -top-10 -bottom-6 z-0 bg-white/75 backdrop-blur-[28px] [mask-image:radial-gradient(ellipse_at_center,black_45%,transparent_80%)] min-[801px]:-inset-x-14" />
+            <h1 id="hero-title" className="relative z-10 font-serif text-[clamp(34px,6.5vw,46px)] leading-[1.28] font-normal tracking-[-1px] text-[#171c19] min-[801px]:text-[48px] min-[801px]:leading-[1.35] min-[801px]:tracking-[-1.5px]"><span className={lineClass}>Tenha <em className="font-bold text-[#22bdbb]">Seu Patrimônio</em> em</span>{" "}<span className={lineClass}>Hotel de Luxo em MG</span></h1>
+            <p className="relative z-10 mt-4 mb-5 max-w-[460px] text-base leading-[1.23] tracking-[.05px] text-[#39413c] min-[801px]:mt-2 min-[801px]:mb-[15px] min-[801px]:max-w-[490px] min-[801px]:text-[17px] min-[801px]:tracking-[-.25px]"><span className={lineClass}>Com a PRIME REALTY você encontra <strong>novas formas de investir</strong></span>{" "}<span className={lineClass}><strong>em hotelaria</strong> com suporte para escolher,</span>{" "}<span className={lineClass}>planejar, acompanhar e diversificar.</span></p>
             </div>
             <form id="contato" className="w-full max-w-[360px] scroll-mt-6 rounded-[7px] border border-white/65 bg-[#f2f5f2]/16 p-5 shadow-[0_2px_3px_#243a3529] backdrop-blur-[12px] min-[801px]:px-[22px] min-[801px]:pt-[18px] min-[801px]:pb-[22px]" onSubmit={(event) => { event.preventDefault(); setSubmitted(true); }}>
               <h2 className="text-center font-serif text-[24px] leading-[1.3] font-bold italic min-[801px]:text-[26px]">Converse com Julia</h2>
@@ -452,6 +452,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
